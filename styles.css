@@ -1,0 +1,20 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+}
+.content-block {
+    display: flex;
+    flex-direction: row;
+
+}
+.content-block > div {
+    width: 40%;
+}
