@@ -1,28 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+body {
+    font-family:'Instrument Serif', Georgia, serif;
+}
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
+    margin-top: 50px;
 }
 header {
-    padding: 10px;
+    background-color: white;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    z-index:8;
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 nav {
     display:flex;
-    gap: 25px;
+    gap: 30px;
+    font-size: x-large;
 }
 h2 {
-    margin: 10px;
+    margin-top: 25px;
+}
+h3 {
+    text-decoration: underline;
+}
+p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5em;
 }
 .content-block {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: start;
     justify-content: center;
+    padding:0 12px;
     gap: 5%;
 }
 .content-block > div {
@@ -32,6 +52,12 @@ h2 {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
+}
+.expandable {
+    filter: drop-shadow(5px 5px 3px grey);
+}
+#remix img {
+    width: 60%;
 }
 .tile img{
     width: 100%;
